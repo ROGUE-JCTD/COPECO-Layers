@@ -5,19 +5,24 @@
   xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
   <NamedLayer>
-    <Name>indidentes_copeco</Name>
+    <Name>incidentes_copeco</Name>
     <UserStyle>
       <FeatureTypeStyle>
         
         <Rule>
           <Title>Nino perdido</Title>
           <Filter xmlns="http://www.opengis.net/ogc">
+            <And>
             <PropertyIsEqualTo>
               <PropertyName>evento</PropertyName>
               <Literal>nino_perdido</Literal>
             </PropertyIsEqualTo>
+            <PropertyIsNotEqualTo>
+              <PropertyName>situacion_actual</PropertyName>
+              <Literal>finalizado</Literal>
+            </PropertyIsNotEqualTo>
+            </And>  
           </Filter>
-          <MaxScaleDenominator>5000000</MaxScaleDenominator>
           <PointSymbolizer>
             <Graphic>
               <ExternalGraphic>
@@ -32,12 +37,17 @@
         <Rule>
           <Title>Accidente ambulancia</Title>
           <Filter xmlns="http://www.opengis.net/ogc">
+            <And>
             <PropertyIsEqualTo>
               <PropertyName>evento</PropertyName>
               <Literal>accidente_ambulancia</Literal>
             </PropertyIsEqualTo>
+            <PropertyIsNotEqualTo>
+              <PropertyName>situacion_actual</PropertyName>
+              <Literal>finalizado</Literal>
+            </PropertyIsNotEqualTo>
+            </And>
           </Filter>
-          <MaxScaleDenominator>5000000</MaxScaleDenominator>
           <PointSymbolizer>
             <Graphic>
               <ExternalGraphic>
@@ -52,12 +62,17 @@
         <Rule>
           <Title>Incidente de trafico</Title>
           <Filter xmlns="http://www.opengis.net/ogc">
+            <And>
             <PropertyIsEqualTo>
               <PropertyName>evento</PropertyName>
               <Literal>incidente_de_trafico</Literal>
             </PropertyIsEqualTo>
+            <PropertyIsNotEqualTo>
+              <PropertyName>situacion_actual</PropertyName>
+              <Literal>finalizado</Literal>
+            </PropertyIsNotEqualTo>
+            </And>
           </Filter>
-          <MaxScaleDenominator>5000000</MaxScaleDenominator>
           <PointSymbolizer>
             <Graphic>
               <ExternalGraphic>
@@ -69,15 +84,20 @@
           </PointSymbolizer>
         </Rule>
 
-	<Rule>
+        <Rule>
           <Title>Danos y perjuicios</Title>
           <Filter xmlns="http://www.opengis.net/ogc">
+            <And>
             <PropertyIsEqualTo>
               <PropertyName>evento</PropertyName>
               <Literal>danos_y_perjuicios</Literal>
             </PropertyIsEqualTo>
+            <PropertyIsNotEqualTo>
+              <PropertyName>situacion_actual</PropertyName>
+              <Literal>finalizado</Literal>
+            </PropertyIsNotEqualTo>
+            </And>   
           </Filter>
-          <MaxScaleDenominator>5000000</MaxScaleDenominator>
           <PointSymbolizer>
             <Graphic>
               <ExternalGraphic>
@@ -89,22 +109,48 @@
           </PointSymbolizer>
         </Rule>
 
-	<Rule>
-          <Title>Otros</Title>
+        <Rule>
+          <Title>Otro</Title>
           <Filter xmlns="http://www.opengis.net/ogc">
+            <And>
             <PropertyIsEqualTo>
               <PropertyName>evento</PropertyName>
-              <Literal>otros</Literal>
+              <Literal>otro</Literal>
             </PropertyIsEqualTo>
+            <PropertyIsNotEqualTo>
+              <PropertyName>situacion_actual</PropertyName>
+              <Literal>finalizado</Literal>
+            </PropertyIsNotEqualTo>
+            </And>
           </Filter>
-          <MaxScaleDenominator>5000000</MaxScaleDenominator>
           <PointSymbolizer>
             <Graphic>
               <ExternalGraphic>
-                <OnlineResource xlink:href="../rogue_symbols/security_attack_100px.png" xlink:type="simple"/>
+                <OnlineResource xlink:href="../rogue_symbols/product_type_report_100px.png" xlink:type="simple"/>
                 <Format>image/png</Format>
               </ExternalGraphic>
               <Size>25</Size>
+            </Graphic>
+          </PointSymbolizer>
+        </Rule>
+        
+        <Rule>
+          <Title>Finalizado</Title>
+          <Filter xmlns="http://www.opengis.net/ogc">
+            <PropertyIsEqualTo>
+              <PropertyName>situacion_actual</PropertyName>
+              <Literal>finalizado</Literal>
+            </PropertyIsEqualTo>
+          </Filter>
+          <PointSymbolizer>
+            <Graphic>
+              <Mark>
+                <WellKnownName>circle</WellKnownName>
+                <Fill>
+                  <CssParameter name="fill">#be24c9</CssParameter>
+                </Fill>
+              </Mark>
+              <Size>8</Size>
             </Graphic>
           </PointSymbolizer>
         </Rule>
@@ -133,18 +179,17 @@
                   <PropertyName>evento</PropertyName>
                   <Literal>incidente_de_trafico</Literal>
                 </PropertyIsNotEqualTo>
-		<PropertyIsNotEqualTo>
+                <PropertyIsNotEqualTo>
                   <PropertyName>evento</PropertyName>
-                  <Literal>danos_y_perjuicos</Literal>
+                  <Literal>danos_y_perjuicios</Literal>
                 </PropertyIsNotEqualTo>
-		<PropertyIsNotEqualTo>
+                <PropertyIsNotEqualTo>
                   <PropertyName>evento</PropertyName>
-                  <Literal>otros</Literal>
+                  <Literal>otro</Literal>
                 </PropertyIsNotEqualTo>
               </And>
             </Or>
           </Filter>
-          <MaxScaleDenominator>5000000</MaxScaleDenominator>
           <PointSymbolizer>
             <Graphic>
               <ExternalGraphic>
