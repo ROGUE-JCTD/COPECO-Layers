@@ -1,36 +1,27 @@
-{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf400
-{\fonttbl\f0\fmodern\fcharset0 Courier;}
-{\colortbl;\red255\green255\blue255;\red135\green135\blue135;\red151\green0\blue173;\red0\green0\blue255;
-\red31\green120\blue15;}
-\margl1440\margr1440\vieww20020\viewh14140\viewkind0
-\deftab720
-\pard\pardeftab720
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<StyledLayerDescriptor version="1.0.0"
+  xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.0.0/StyledLayerDescriptor.xsd"
+  xmlns="http://www.opengis.net/sld" xmlns:ogc="http://www.opengis.net/ogc"
+  xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
-\f0\fs24 \cf2 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>\cf0 \
-<\cf3 StyledLayerDescriptor \cf4 version\cf0 =\cf5 "1.0.0"\cf0 \
-\'a0\'a0\cf4 xsi:schemaLocation\cf0 =\cf5 "http://www.opengis.net/sld http://schemas.opengis.net/sld/1.0.0/StyledLayerDescriptor.xsd"\cf0 \
-\'a0\'a0\cf4 xmlns\cf0 =\cf5 "http://www.opengis.net/sld" \cf4 xmlns:ogc\cf0 =\cf5 "http://www.opengis.net/ogc"\cf0 \
-\'a0\'a0\cf4 xmlns:xlink\cf0 =\cf5 "http://www.w3.org/1999/xlink" \cf4 xmlns:xsi\cf0 =\cf5 "http://www.w3.org/2001/XMLSchema-instance"\cf0 >\
-\
-\'a0\'a0<\cf3 NamedLayer\cf0 >\
-\'a0 \'a0\'a0<\cf3 Name\cf0 >Poblacion</\cf3 Name\cf0 >\
-\'a0 \'a0\'a0<\cf3 UserStyle\cf0 >\
-\'a0 \'a0 \'a0\'a0<\cf3 FeatureTypeStyle\cf0 >\
-\'a0 \'a0 \'a0 \'a0\'a0\
-\'a0 \'a0 \'a0 \'a0\'a0<\cf3 Rule\cf0 >\
-\'a0 \'a0 \'a0 \'a0 \'a0\'a0<\cf3 Title\cf0 >Afectada Poblacion</\cf3 Title\cf0 >\
-\'a0 \'a0 \'a0 \'a0 \'a0\'a0<\cf3 PointSymbolizer\cf0 >\
-\'a0 \'a0 \'a0 \'a0 \'a0 \'a0\'a0<\cf3 Graphic\cf0 >\
-\'a0 \'a0 \'a0 \'a0 \'a0 \'a0 \'a0\'a0<\cf3 ExternalGraphic\cf0 >\
-\'a0 \'a0 \'a0 \'a0 \'a0 \'a0 \'a0 \'a0\'a0<\cf3 OnlineResource \cf4 xlink:href\cf0 =\cf5 "../rogue_symbols/people_affected_population_20px.png" \cf4 xlink:type\cf0 =\cf5 "simple"\cf0 />\
-\'a0 \'a0 \'a0 \'a0 \'a0 \'a0 \'a0 \'a0\'a0<\cf3 Format\cf0 >image/png</\cf3 Format\cf0 >\
-\'a0 \'a0 \'a0 \'a0 \'a0 \'a0 \'a0\'a0</\cf3 ExternalGraphic\cf0 >\
-\'a0 \'a0 \'a0 \'a0 \'a0 \'a0\'a0</\cf3 Graphic\cf0 >\
-\'a0 \'a0 \'a0 \'a0 \'a0\'a0</\cf3 PointSymbolizer\cf0 >\
-\'a0 \'a0 \'a0 \'a0\'a0</\cf3 Rule\cf0 >\
-\'a0 \'a0 \'a0 \'a0 \'a0 \'a0 \'a0 \'a0\'a0\
-\'a0 \'a0 \'a0\'a0</\cf3 FeatureTypeStyle\cf0 >\
-\'a0 \'a0\'a0</\cf3 UserStyle\cf0 >\
-\'a0\'a0</\cf3 NamedLayer\cf0 >\
-</\cf3 StyledLayerDescriptor\cf0 >\
-}
+  <NamedLayer>
+    <Name>Poblacion</Name>
+    <UserStyle>
+      <FeatureTypeStyle>
+        
+        <Rule>
+          <Title>Afectada Poblacion</Title>
+          <PointSymbolizer>
+            <Graphic>
+              <ExternalGraphic>
+                <OnlineResource xlink:href="../rogue_symbols/people_affected_population_20px.png" xlink:type="simple"/>
+                <Format>image/png</Format>
+              </ExternalGraphic>
+            </Graphic>
+          </PointSymbolizer>
+        </Rule>
+                
+      </FeatureTypeStyle>
+    </UserStyle>
+  </NamedLayer>
+</StyledLayerDescriptor>
