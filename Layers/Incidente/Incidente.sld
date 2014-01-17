@@ -17,7 +17,6 @@
               <Literal>accidente_aereo</Literal>
             </PropertyIsEqualTo>
           </Filter>
-          <!-- MaxScaleDenominator>5000000</MaxScaleDenominator -->
           <PointSymbolizer>
             <Graphic>
               <ExternalGraphic>
@@ -36,7 +35,6 @@
               <Literal>accidente_maritimo</Literal>
             </PropertyIsEqualTo>
           </Filter>
-          <!-- MaxScaleDenominator>5000000</MaxScaleDenominator -->
           <PointSymbolizer>
             <Graphic>
               <ExternalGraphic>
@@ -55,7 +53,6 @@
               <Literal>accidente_vial</Literal>
             </PropertyIsEqualTo>
           </Filter>
-          <!-- MaxScaleDenominator>5000000</MaxScaleDenominator -->
           <PointSymbolizer>
             <Graphic>
               <ExternalGraphic>
@@ -74,7 +71,6 @@
               <Literal>actividad_volcanica</Literal>
             </PropertyIsEqualTo>
           </Filter>
-          <!-- MaxScaleDenominator>5000000</MaxScaleDenominator -->
           <PointSymbolizer>
             <Graphic>
               <ExternalGraphic>
@@ -94,7 +90,6 @@
               <Literal>aluvion</Literal>
             </PropertyIsEqualTo>
           </Filter>
-          <!-- MaxScaleDenominator>5000000</MaxScaleDenominator -->
           <PointSymbolizer>
             <Graphic>
               <ExternalGraphic>
@@ -113,7 +108,6 @@
               <Literal>caida_de_arboles</Literal>
             </PropertyIsEqualTo>
           </Filter>
-          <!-- MaxScaleDenominator>5000000</MaxScaleDenominator -->
           <PointSymbolizer>
             <Graphic>
               <ExternalGraphic>
@@ -132,7 +126,6 @@
               <Literal>colapso_estructuras</Literal>
             </PropertyIsEqualTo>
           </Filter>
-          <!-- MaxScaleDenominator>5000000</MaxScaleDenominator -->
           <PointSymbolizer>
             <Graphic>
               <ExternalGraphic>
@@ -151,7 +144,6 @@
               <Literal>derrumbe</Literal>
             </PropertyIsEqualTo>
           </Filter>
-          <!-- MaxScaleDenominator>5000000</MaxScaleDenominator -->
           <PointSymbolizer>
             <Graphic>
               <ExternalGraphic>
@@ -170,7 +162,6 @@
               <Literal>deslizamiento</Literal>
             </PropertyIsEqualTo>
           </Filter>
-          <!-- MaxScaleDenominator>5000000</MaxScaleDenominator -->
           <PointSymbolizer>
             <Graphic>
               <ExternalGraphic>
@@ -189,7 +180,6 @@
               <Literal>epidemia</Literal>
             </PropertyIsEqualTo>
           </Filter>
-          <!-- MaxScaleDenominator>5000000</MaxScaleDenominator -->
           <PointSymbolizer>
             <Graphic>
               <ExternalGraphic>
@@ -208,7 +198,6 @@
               <Literal>hundimiento</Literal>
             </PropertyIsEqualTo>
           </Filter>
-          <!-- MaxScaleDenominator>5000000</MaxScaleDenominator -->
           <PointSymbolizer>
             <Graphic>
               <ExternalGraphic>
@@ -227,7 +216,6 @@
               <Literal>huracan</Literal>
             </PropertyIsEqualTo>
           </Filter>
-          <!-- MaxScaleDenominator>5000000</MaxScaleDenominator -->
           <PointSymbolizer>
             <Graphic>
               <ExternalGraphic>
@@ -246,7 +234,6 @@
               <Literal>incendio_estructural</Literal>
             </PropertyIsEqualTo>
           </Filter>
-          <!-- MaxScaleDenominator>5000000</MaxScaleDenominator -->
           <PointSymbolizer>
             <Graphic>
               <ExternalGraphic>
@@ -265,7 +252,6 @@
               <Literal>incendio_forestal</Literal>
             </PropertyIsEqualTo>
           </Filter>
-          <!-- MaxScaleDenominator>5000000</MaxScaleDenominator -->
           <PointSymbolizer>
             <Graphic>
               <ExternalGraphic>
@@ -284,7 +270,6 @@
               <Literal>inundacion</Literal>
             </PropertyIsEqualTo>
           </Filter>
-          <!-- MaxScaleDenominator>5000000</MaxScaleDenominator -->
           <PointSymbolizer>
             <Graphic>
               <ExternalGraphic>
@@ -303,7 +288,6 @@
               <Literal>materiales_peligrosos</Literal>
             </PropertyIsEqualTo>
           </Filter>
-          <!-- MaxScaleDenominator>5000000</MaxScaleDenominator -->
           <PointSymbolizer>
             <Graphic>
               <ExternalGraphic>
@@ -322,7 +306,6 @@
               <Literal>sequia</Literal>
             </PropertyIsEqualTo>
           </Filter>
-          <!-- MaxScaleDenominator>5000000</MaxScaleDenominator -->
           <PointSymbolizer>
             <Graphic>
               <ExternalGraphic>
@@ -341,7 +324,6 @@
               <Literal>sismo</Literal>
             </PropertyIsEqualTo>
           </Filter>
-          <!-- MaxScaleDenominator>5000000</MaxScaleDenominator -->
           <PointSymbolizer>
             <Graphic>
               <ExternalGraphic>
@@ -360,7 +342,6 @@
               <Literal>socio_organizativa</Literal>
             </PropertyIsEqualTo>
           </Filter>
-          <!-- MaxScaleDenominator>5000000</MaxScaleDenominator -->
           <PointSymbolizer>
             <Graphic>
               <ExternalGraphic>
@@ -379,7 +360,6 @@
               <Literal>temperatura_extrema</Literal>
             </PropertyIsEqualTo>
           </Filter>
-          <!-- MaxScaleDenominator>5000000</MaxScaleDenominator -->
           <PointSymbolizer>
             <Graphic>
               <ExternalGraphic>
@@ -398,7 +378,6 @@
               <Literal>tormenta</Literal>
             </PropertyIsEqualTo>
           </Filter>
-          <!-- MaxScaleDenominator>5000000</MaxScaleDenominator -->
           <PointSymbolizer>
             <Graphic>
               <ExternalGraphic>
@@ -417,7 +396,6 @@
               <Literal>tsunami</Literal>
             </PropertyIsEqualTo>
           </Filter>
-          <!-- MaxScaleDenominator>5000000</MaxScaleDenominator -->
           <PointSymbolizer>
             <Graphic>
               <ExternalGraphic>
@@ -436,7 +414,6 @@
               <Literal>vientos_fuertes</Literal>
             </PropertyIsEqualTo>
           </Filter>
-          <!-- MaxScaleDenominator>5000000</MaxScaleDenominator -->
           <PointSymbolizer>
             <Graphic>
               <ExternalGraphic>
@@ -455,7 +432,6 @@
               <Literal>otro</Literal>
             </PropertyIsEqualTo>
           </Filter>
-          <!-- MaxScaleDenominator>5000000</MaxScaleDenominator -->
           <PointSymbolizer>
             <Graphic>
               <ExternalGraphic>
@@ -577,7 +553,6 @@
               </And>
             </Or>
           </Filter>
-          <!-- MaxScaleDenominator>5000000</MaxScaleDenominator -->
           <PointSymbolizer>
             <Graphic>
               <ExternalGraphic>

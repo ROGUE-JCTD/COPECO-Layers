@@ -14,7 +14,7 @@
           <PointSymbolizer>
             <Graphic>
               <ExternalGraphic>
-                <OnlineResource xlink:href="../rogue_symbols/people_affected_population_20px.png" xlink:type="simple"/>
+                <OnlineResource xlink:href="file://../rogue_symbols/people_affected_population_20px.png" xlink:type="simple"/>
                 <Format>image/png</Format>
               </ExternalGraphic>
             </Graphic>

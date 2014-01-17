@@ -15,10 +15,9 @@
           <PointSymbolizer>
             <Graphic>
               <ExternalGraphic>
-                <OnlineResource xlink:href="../rogue_symbols/leisure_soccer_ball_100px.png" xlink:type="simple"/>
+                <OnlineResource xlink:href="file://../rogue_symbols/leisure_soccer_ball_20px.png" xlink:type="simple"/>
                 <Format>image/png</Format>
               </ExternalGraphic>
-              <Size>25</Size>
             </Graphic>
           </PointSymbolizer>
         </Rule>
