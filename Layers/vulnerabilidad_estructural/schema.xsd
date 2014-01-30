@@ -13,11 +13,11 @@ elementFormDefault="qualified">
 			<xsd:extension base="gml:AbstractFeatureType">
 				<xsd:sequence>
 					<xsd:element maxOccurs="1" minOccurs="0" name="No_Formulario" nillable="true" type="xsd:string"/>
-					<xsd:element maxOccurs="1" minOccurs="0" name="Fecha_Hora_Vista" nillable="true" type="xsd:dateTime"/>
-					<xsd:element maxOccurs="1" minOccurs="0" name="Nombre_Proprietario" nillable="true" type="xsd:string"/>
-					<xsd:element maxOccurs="1" minOccurs="0" name="No_Identidad" nillable="true" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="Fecha_Hora_Visita" nillable="true" type="xsd:dateTime"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="Nombre_Propietario" nillable="true" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="No_Indentidad" nillable="true" type="xsd:string"/>
 					<xsd:element maxOccurs="1" minOccurs="0" name="Telefono" nillable="true" type="xsd:string"/>
-					<xsd:element maxOccurs="1" minOccurs="0" name="Nombre_Proprietario" nillable="true" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="Nombre_Arrendatario" nillable="true" type="xsd:string"/>
 					<xsd:element maxOccurs="1" minOccurs="0" name="Calle" nillable="true" type="xsd:string"/>
 					<xsd:element maxOccurs="1" minOccurs="0" name="Bl" nillable="true" type="xsd:string"/>
 					<xsd:element maxOccurs="1" minOccurs="0" name="Lote" nillable="true" type="xsd:string"/>
@@ -39,9 +39,15 @@ elementFormDefault="qualified">
                             				</xsd:restriction>
                         			</xsd:simpleType>
                         		</xsd:element>
-					<xsd:element maxOccurs="1" minOccurs="0" name="Estrado_Vivienda" nillable="true" type="xsd:string"/>
-					<xsd:element maxOccurs="1" minOccurs="0" name="Numero_Pisos" nillable="true" type="xsd:string"/>
-					<xsd:element maxOccurs="1" minOccurs="0" name="Area_Construida" nillable="true" type="xsd:integer"/>
+                    <xsd:element maxOccurs="1" minOccurs="0" name="Estrato_Vivienda" nillable="true" type="xsd:string"/>
+                    <xsd:element maxOccurs="1" minOccurs="0" name="Localizacio_Manzana" nillable="true" type="xsd:string"/>
+                    <xsd:element maxOccurs="1" minOccurs="0" name="Numero_Pisos_Niveles_sobre_el_terreno" nillable="true" type="xsd:string"/>
+                    <xsd:element maxOccurs="1" minOccurs="0" name="Numero_Pisos_Sotanos" nillable="true" type="xsd:string"/>
+                    <xsd:element maxOccurs="1" minOccurs="0" name="Numero_Pisos_Total" nillable="true" type="xsd:string"/>
+                    <xsd:element maxOccurs="1" minOccurs="0" name="Area_Construida_Primer_Piso" nillable="true" type="xsd:integer"/>
+                    <xsd:element maxOccurs="1" minOccurs="0" name="Area_Construida_Segundo_Piso" nillable="true" type="xsd:integer"/>
+                    <xsd:element maxOccurs="1" minOccurs="0" name="Area_Construida_Tercer_Piso" nillable="true" type="xsd:integer"/>
+                    <xsd:element maxOccurs="1" minOccurs="0" name="Area_Construida_Cuarto_Piso" nillable="true" type="xsd:integer"/>
 					<xsd:element maxOccurs="1" minOccurs="0" name="Tenencia_Bien" nillable="true">
 						<xsd:simpleType>
                             				<xsd:restriction base="xsd:string">
@@ -243,6 +249,230 @@ elementFormDefault="qualified">
                             				</xsd:restriction>
                             		</xsd:simpleType>
                         		</xsd:element>
+                    <xsd:element maxOccurs="1" minOccurs="0" name="Cimentacion_Danos" nillable="true">
+						<xsd:simpleType>
+                            				<xsd:restriction base="xsd:string">
+                                				<xsd:enumeration value="Ninguno"/>
+                                				<xsd:enumeration value="Leve"/>
+                                				<xsd:enumeration value="Moderado"/>
+                                				<xsd:enumeration value="Fuerte"/>
+                                				<xsd:enumeration value="Severo"/>
+                            				</xsd:restriction>
+                            		</xsd:simpleType>
+                        		</xsd:element>
+                    <xsd:element maxOccurs="1" minOccurs="0" name="Cimentacion_Condicion" nillable="true">
+						<xsd:simpleType>
+                            				<xsd:restriction base="xsd:string">
+                                				<xsd:enumeration value="Malo"/>
+                                				<xsd:enumeration value="Regular"/>
+                                				<xsd:enumeration value="Bueno"/>
+                            				</xsd:restriction>
+                            		</xsd:simpleType>
+                        		</xsd:element>
+                    <xsd:element maxOccurs="1" minOccurs="0" name="MurosPortantes_Danos" nillable="true">
+						<xsd:simpleType>
+                            				<xsd:restriction base="xsd:string">
+                                				<xsd:enumeration value="Ninguno"/>
+                                				<xsd:enumeration value="Leve"/>
+                                				<xsd:enumeration value="Moderado"/>
+                                				<xsd:enumeration value="Fuerte"/>
+                                				<xsd:enumeration value="Severo"/>
+                            				</xsd:restriction>
+                            		</xsd:simpleType>
+                        		</xsd:element>
+                    <xsd:element maxOccurs="1" minOccurs="0" name="MurosPortantes_Condicion" nillable="true">
+						<xsd:simpleType>
+                            				<xsd:restriction base="xsd:string">
+                                				<xsd:enumeration value="Malo"/>
+                                				<xsd:enumeration value="Regular"/>
+                                				<xsd:enumeration value="Bueno"/>
+                            				</xsd:restriction>
+                            		</xsd:simpleType>
+                        		</xsd:element>
+                    <xsd:element maxOccurs="1" minOccurs="0" name="Columnas_Danos" nillable="true">
+						<xsd:simpleType>
+                            				<xsd:restriction base="xsd:string">
+                                				<xsd:enumeration value="Ninguno"/>
+                                				<xsd:enumeration value="Leve"/>
+                                				<xsd:enumeration value="Moderado"/>
+                                				<xsd:enumeration value="Fuerte"/>
+                                				<xsd:enumeration value="Severo"/>
+                            				</xsd:restriction>
+                            		</xsd:simpleType>
+                        		</xsd:element>
+                    <xsd:element maxOccurs="1" minOccurs="0" name="Columnas_Condicion" nillable="true">
+						<xsd:simpleType>
+                            				<xsd:restriction base="xsd:string">
+                                				<xsd:enumeration value="Malo"/>
+                                				<xsd:enumeration value="Regular"/>
+                                				<xsd:enumeration value="Bueno"/>
+                            				</xsd:restriction>
+                            		</xsd:simpleType>
+                        		</xsd:element>
+                    <xsd:element maxOccurs="1" minOccurs="0" name="Vigas_Danos" nillable="true">
+						<xsd:simpleType>
+                            				<xsd:restriction base="xsd:string">
+                                				<xsd:enumeration value="Ninguno"/>
+                                				<xsd:enumeration value="Leve"/>
+                                				<xsd:enumeration value="Moderado"/>
+                                				<xsd:enumeration value="Fuerte"/>
+                                				<xsd:enumeration value="Severo"/>
+                            				</xsd:restriction>
+                            		</xsd:simpleType>
+                        		</xsd:element>
+                    <xsd:element maxOccurs="1" minOccurs="0" name="Vigas_Condicion" nillable="true">
+						<xsd:simpleType>
+                            				<xsd:restriction base="xsd:string">
+                                				<xsd:enumeration value="Malo"/>
+                                				<xsd:enumeration value="Regular"/>
+                                				<xsd:enumeration value="Bueno"/>
+                            				</xsd:restriction>
+                            		</xsd:simpleType>
+                        		</xsd:element>
+                    <xsd:element maxOccurs="1" minOccurs="0" name="Entrepisos_Losas_Danos" nillable="true">
+						<xsd:simpleType>
+                            				<xsd:restriction base="xsd:string">
+                                				<xsd:enumeration value="Ninguno"/>
+                                				<xsd:enumeration value="Leve"/>
+                                				<xsd:enumeration value="Moderado"/>
+                                				<xsd:enumeration value="Fuerte"/>
+                                				<xsd:enumeration value="Severo"/>
+                            				</xsd:restriction>
+                            		</xsd:simpleType>
+                        		</xsd:element>
+                    <xsd:element maxOccurs="1" minOccurs="0" name="Entrepisos_Losas_Condicion" nillable="true">
+						<xsd:simpleType>
+                            				<xsd:restriction base="xsd:string">
+                                				<xsd:enumeration value="Malo"/>
+                                				<xsd:enumeration value="Regular"/>
+                                				<xsd:enumeration value="Bueno"/>
+                            				</xsd:restriction>
+                            		</xsd:simpleType>
+                        		</xsd:element>
+                    <xsd:element maxOccurs="1" minOccurs="0" name="Soporte_de_Cubierta_Techos_Danos" nillable="true">
+						<xsd:simpleType>
+                            				<xsd:restriction base="xsd:string">
+                                				<xsd:enumeration value="Ninguno"/>
+                                				<xsd:enumeration value="Leve"/>
+                                				<xsd:enumeration value="Moderado"/>
+                                				<xsd:enumeration value="Fuerte"/>
+                                				<xsd:enumeration value="Severo"/>
+                            				</xsd:restriction>
+                            		</xsd:simpleType>
+                        		</xsd:element>
+                    <xsd:element maxOccurs="1" minOccurs="0" name="Soporte_de_Cubierta_Techos_Condicion" nillable="true">
+						<xsd:simpleType>
+                            				<xsd:restriction base="xsd:string">
+                                				<xsd:enumeration value="Malo"/>
+                                				<xsd:enumeration value="Regular"/>
+                                				<xsd:enumeration value="Bueno"/>
+                            				</xsd:restriction>
+                            		</xsd:simpleType>
+                        		</xsd:element>
+                    <xsd:element maxOccurs="1" minOccurs="0" name="Muros_de_Fachada_o_Antepecho_Danos" nillable="true">
+						<xsd:simpleType>
+                            				<xsd:restriction base="xsd:string">
+                                				<xsd:enumeration value="Ninguno"/>
+                                				<xsd:enumeration value="Leve"/>
+                                				<xsd:enumeration value="Moderado"/>
+                                				<xsd:enumeration value="Fuerte"/>
+                                				<xsd:enumeration value="Severo"/>
+                            				</xsd:restriction>
+                            		</xsd:simpleType>
+                        		</xsd:element>
+                    <xsd:element maxOccurs="1" minOccurs="0" name="Muros_de_Fachada_o_Antepecho_Condicion" nillable="true">
+						<xsd:simpleType>
+                            				<xsd:restriction base="xsd:string">
+                                				<xsd:enumeration value="Malo"/>
+                                				<xsd:enumeration value="Regular"/>
+                                				<xsd:enumeration value="Bueno"/>
+                            				</xsd:restriction>
+                            		</xsd:simpleType>
+                        		</xsd:element>
+                    <xsd:element maxOccurs="1" minOccurs="0" name="Paredes_Danos" nillable="true">
+						<xsd:simpleType>
+                            				<xsd:restriction base="xsd:string">
+                                				<xsd:enumeration value="Ninguno"/>
+                                				<xsd:enumeration value="Leve"/>
+                                				<xsd:enumeration value="Moderado"/>
+                                				<xsd:enumeration value="Fuerte"/>
+                                				<xsd:enumeration value="Severo"/>
+                            				</xsd:restriction>
+                            		</xsd:simpleType>
+                        		</xsd:element>
+                    <xsd:element maxOccurs="1" minOccurs="0" name="Paredes_Condicion" nillable="true">
+						<xsd:simpleType>
+                            				<xsd:restriction base="xsd:string">
+                                				<xsd:enumeration value="Malo"/>
+                                				<xsd:enumeration value="Regular"/>
+                                				<xsd:enumeration value="Bueno"/>
+                            				</xsd:restriction>
+                            		</xsd:simpleType>
+                        		</xsd:element>
+                    <xsd:element maxOccurs="1" minOccurs="0" name="Cubierta_Danos" nillable="true">
+						<xsd:simpleType>
+                            				<xsd:restriction base="xsd:string">
+                                				<xsd:enumeration value="Ninguno"/>
+                                				<xsd:enumeration value="Leve"/>
+                                				<xsd:enumeration value="Moderado"/>
+                                				<xsd:enumeration value="Fuerte"/>
+                                				<xsd:enumeration value="Severo"/>
+                            				</xsd:restriction>
+                            		</xsd:simpleType>
+                        		</xsd:element>
+                    <xsd:element maxOccurs="1" minOccurs="0" name="Cubierta_Condicion" nillable="true">
+						<xsd:simpleType>
+                            				<xsd:restriction base="xsd:string">
+                                				<xsd:enumeration value="Malo"/>
+                                				<xsd:enumeration value="Regular"/>
+                                				<xsd:enumeration value="Bueno"/>
+                            				</xsd:restriction>
+                            		</xsd:simpleType>
+                        		</xsd:element>
+                    <xsd:element maxOccurs="1" minOccurs="0" name="Cielo_Falso_Danos" nillable="true">
+						<xsd:simpleType>
+                            				<xsd:restriction base="xsd:string">
+                                				<xsd:enumeration value="Ninguno"/>
+                                				<xsd:enumeration value="Leve"/>
+                                				<xsd:enumeration value="Moderado"/>
+                                				<xsd:enumeration value="Fuerte"/>
+                                				<xsd:enumeration value="Severo"/>
+                            				</xsd:restriction>
+                            		</xsd:simpleType>
+                        		</xsd:element>
+                    <xsd:element maxOccurs="1" minOccurs="0" name="Cielo_Falso_Condicion" nillable="true">
+						<xsd:simpleType>
+                            				<xsd:restriction base="xsd:string">
+                                				<xsd:enumeration value="Malo"/>
+                                				<xsd:enumeration value="Regular"/>
+                                				<xsd:enumeration value="Bueno"/>
+                            				</xsd:restriction>
+                            		</xsd:simpleType>
+                        		</xsd:element>
+                    <xsd:element maxOccurs="1" minOccurs="0" name="Tanques_elevados_Danos" nillable="true">
+						<xsd:simpleType>
+                            				<xsd:restriction base="xsd:string">
+                                				<xsd:enumeration value="Ninguno"/>
+                                				<xsd:enumeration value="Leve"/>
+                                				<xsd:enumeration value="Moderado"/>
+                                				<xsd:enumeration value="Fuerte"/>
+                                				<xsd:enumeration value="Severo"/>
+                            				</xsd:restriction>
+                            		</xsd:simpleType>
+                        		</xsd:element>
+                    <xsd:element maxOccurs="1" minOccurs="0" name="Tanques_elevados_Condicion" nillable="true">
+						<xsd:simpleType>
+                            				<xsd:restriction base="xsd:string">
+                                				<xsd:enumeration value="Malo"/>
+                                				<xsd:enumeration value="Regular"/>
+                                				<xsd:enumeration value="Bueno"/>
+                            				</xsd:restriction>
+                            		</xsd:simpleType>
+                        		</xsd:element>
+                    <xsd:element maxOccurs="1" minOccurs="0" name="Comentarios_y_Observaciones" nillable="true" type="xsd:string"/>
+                    <xsd:element maxOccurs="1" minOccurs="0" name="Nombre_y_Apellidos" nillable="true" type="xsd:string"/>
+                    <xsd:element maxOccurs="1" minOccurs="0" name="No_Evaluacion" nillable="true" type="xsd:string"/>
+                    <xsd:element maxOccurs="1" minOccurs="0" name="fotos" nillable="true" type="xsd:string"/>
 				</xsd:sequence>
 			</xsd:extension>
 		</xsd:complexContent>
