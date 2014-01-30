@@ -37,8 +37,7 @@ elementFormDefault="qualified">
 								</xsd:simpleType>
 							</xsd:element>
 					<xsd:element maxOccurs="1" minOccurs="0" name="municipio" nillable="true" type="xsd:string"/>
-					<xsd:element maxOccurs="1" minOccurs="0" name="fecha" nillable="true" type="xsd:date"/>
-					<xsd:element maxOccurs="1" minOccurs="0" name="hora" nillable="true" type="xsd:time"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="fecha_hora" nillable="true" type="xsd:dateTime"/>
 					<xsd:element maxOccurs="1" minOccurs="0" name="comentarios" nillable="true" type="xsd:string"/>
 				</xsd:sequence>
 			</xsd:extension>
