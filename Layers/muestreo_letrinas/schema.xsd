@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:geonode="http://www.geonode.org/" xmlns:gml="http://www.opengis.net/gml" xmlns:it.geosolutions="http://www.geo-solutions.it" xmlns:topp="http://www.openplans.org/topp" elementFormDefault="qualified" targetNamespace="http://www.geonode.org/">
+  <xsd:import namespace="http://www.opengis.net/gml" schemaLocation="http://190.5.74.29/geoserver/schemas/gml/3.1.1/base/gml.xsd"/>
+  <xsd:complexType name="muestreo_letrinasType">
+    <xsd:complexContent>
+      <xsd:extension base="gml:AbstractFeatureType">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="geom" nillable="true" type="gml:PointPropertyType"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="fecha_de_levantamiento" nillable="true" type="xsd:date"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="nombre_quien_levanto" nillable="true" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="codigo" nillable="true" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="departamento" nillable="true">
+            <xsd:simpleType>
+              <xsd:restriction base="xsd:string">
+                <xsd:enumeration value="Atlantida"/>
+                <xsd:enumeration value="Colon"/>
+                <xsd:enumeration value="Comayagua"/>
+                <xsd:enumeration value="Copan"/>
+                <xsd:enumeration value="Cortes"/>
+                <xsd:enumeration value="Choluteca"/>
+                <xsd:enumeration value="El Paraiso"/>
+                <xsd:enumeration value="Francisco Morazan"/>
+                <xsd:enumeration value="Gracias a Dios"/>
+                <xsd:enumeration value="Intibuca"/>
+                <xsd:enumeration value="Islas de la Bahia"/>
+                <xsd:enumeration value="La Paz"/>
+                <xsd:enumeration value="Lempira"/>
+                <xsd:enumeration value="Ocotepeque"/>
+                <xsd:enumeration value="Olancho"/>
+                <xsd:enumeration value="Santa Barbara"/>
+                <xsd:enumeration value="Valle"/>
+                <xsd:enumeration value="Yoro"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element maxOccurs="1" minOccurs="0" name="municipio" nillable="true" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="ciudad" nillable="true" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="barrio_o_colonia" nillable="true" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="aldea_o_cacerio" nillable="true" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="direccion_exacta" nillable="true" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="fecha_inicio_del_proyecto" nillable="true" type="xsd:date"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="fecha_terminacion_del_proyecto" nillable="true" type="xsd:date"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="nombre_del_beneficiario" nillable="true" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="numero_de_identidad" nillable="true" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="estado_civil" nillable="true" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="nombre_del_conyugue" nillable="true" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="numero_de_hijos" nillable="true" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="numero_de_telefono" nillable="true" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="actividad_laboral_del_beneficiario" nillable="true" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="documento_de_propiedad" nillable="true" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="observaciones" nillable="true" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="fotos" nillable="true" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="muestreo_letrinas" substitutionGroup="gml:_Feature" type="geonode:muestreo_letrinasType"/>
+</xsd:schema>
