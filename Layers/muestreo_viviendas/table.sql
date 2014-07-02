@@ -39,5 +39,5 @@ CREATE TABLE muestreo_viviendas(
   Pila text,
   Pintura text,
   Observaciones text,
-  foto text
+  fotos text
 );
