@@ -17,7 +17,7 @@ CREATE TABLE muestreo_viviendas(
   Estado_civil text,
   Nombre_del_conyugue text,
   Numero_de_hijos text,
-  Numero _de_telefono text,
+  Numero_de_telefono text,
   Actividad_laboral_del_beneficiario text,
   Documento_de_propiedad text,
   Sobrecimiento text,
