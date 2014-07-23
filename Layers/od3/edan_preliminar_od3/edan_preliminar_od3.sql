@@ -84,7 +84,7 @@ CREATE TABLE edan_preliminar_od3
   control_de_calidad character varying,
   commentarios character varying,
   fotos character varying,
-  geom geometry(Point,4326),
+  geom geometry(MultiPolygon,4326),
   CONSTRAINT edan_preliminar_od3_pkey PRIMARY KEY (id )
 )
 WITH (
